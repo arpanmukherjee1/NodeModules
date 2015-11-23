@@ -1,0 +1,71 @@
+{
+    "name": "some",
+    "version": "1.0.0",
+    "applicationEnviroment": "dev",
+    "description": "Framework",
+    "main": "cluster",    
+    "forkcount": "10",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "IRIS",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.13.3",
+        "cookie-parser": "^1.3.5",
+        "ejs": "^2.3.3",
+        "express": "^4.13.3",
+        "express-ntlm": "^2.1.4",
+        "express-session": "^1.11.3",
+        "fs": "0.0.2",
+        "fstream": "^1.0.8",
+        "mkdirp": "^0.5.1",
+        "mongodb": "^2.0.46",
+        "multer": "^1.1.0",
+        "path": "^0.11.14",
+        "protobufjs": "^4.1.2",
+        "request": "^2.61.0",
+        "socket.io": "^1.3.6",
+        "trim": "0.0.1",
+        "unzip": "^0.1.11",
+        "xmlbuilder": "^4.0.0"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.0",
+        "gulp-concat": "^2.6.0",
+        "gulp-html-replace": "^1.5.4",
+        "gulp-minify-css": "^1.2.1",
+        "requirejs": "^2.1.20"
+    },
+
+    "enviromentSettings": {
+        "qa": {
+            "forkcount": "20",
+            "sharedDirPath": "",
+            "moduleRegistryDirPath": "",
+            "moduleRegistryUrl": "",
+            "mongodbConnectionString": "",
+            "httpPort":  "3000"
+        },
+
+        "dev": {
+            "forkcount": "20",
+            "sharedDirPath": "./data/shared",
+            "moduleRegistryDirPath": "./data/modules",
+            "moduleRegistryUrl": "./modules/",
+            "mongodbConnectionString": "",
+            "httpPort": "3000",
+            "domaincontroller": "",
+            "domain": ""
+        },
+
+        "prod": { 
+            "forkcount": "20",
+            "sharedDirPath": "",
+            "moduleRegistryDirPath": "",
+            "moduleRegistryUrl": "",
+            "mongodbConnectionString": "",
+            "httpPort":  "3000"
+        }
+    }
+}
